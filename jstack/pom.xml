@@ -11,7 +11,7 @@
     </parent>
 
     <artifactId>jpt.jstack</artifactId>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
     <name>${project.artifactId}-${project.version}</name>
 
 </project>

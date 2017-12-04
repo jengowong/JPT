@@ -11,7 +11,14 @@
     </parent>
 
     <artifactId>jpt.stockbatchingforkjoin</artifactId>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
     <name>${project.artifactId}-${project.version}</name>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.github.jengo</groupId>
+            <artifactId>jpt.impl</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>

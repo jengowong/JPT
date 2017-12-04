@@ -14,4 +14,11 @@
     <packaging>war</packaging>
     <name>${project.artifactId}-${project.version}</name>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.github.jengo</groupId>
+            <artifactId>jpt.impl</artifactId>
+        </dependency>
+    </dependencies>
+
 </project>

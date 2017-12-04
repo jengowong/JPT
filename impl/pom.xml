@@ -11,7 +11,19 @@
     </parent>
 
     <artifactId>jpt.impl</artifactId>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
     <name>${project.artifactId}-${project.version}</name>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.github.jengo</groupId>
+            <artifactId>jpt.api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.eclipse.persistence</groupId>
+            <artifactId>eclipselink</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>

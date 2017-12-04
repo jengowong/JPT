@@ -11,7 +11,17 @@
     </parent>
 
     <artifactId>jpt.size</artifactId>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
     <name>${project.artifactId}-${project.version}</name>
+
+    <dependencies>
+        <dependency>
+            <groupId>net.sourceforge.sizeof</groupId>
+            <artifactId>sizeof</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/third-libs/SizeOf.jar</systemPath>
+        </dependency>
+    </dependencies>
 
 </project>
