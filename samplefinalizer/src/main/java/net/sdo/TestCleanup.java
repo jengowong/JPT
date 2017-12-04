@@ -5,7 +5,7 @@
 package net.sdo;
 
 public class TestCleanup {
-        
+
         public static void main(String[] args) {
                 CleanupClass c1 = new CleanupClass();
                 CleanupClass c2 = new CleanupClass();

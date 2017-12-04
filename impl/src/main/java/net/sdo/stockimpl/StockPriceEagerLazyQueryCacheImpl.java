@@ -42,22 +42,22 @@ public class StockPriceEagerLazyQueryCacheImpl implements Serializable, StockPri
     private static final long serialVersionUID = 1L;
     @EmbeddedId
     private StockPricePK id;
-    
+
     @Column(precision = 30, scale = 2)
     private BigDecimal high;
-    
+
     @Column(precision = 30, scale = 2)
     private BigDecimal low;
-    
+
     @Column(precision = 30, scale = 2)
     private BigDecimal closingPrice;
-    
+
     @Column(precision = 30, scale = 2)
     private BigDecimal openingPrice;
-    
+
     @Column
     private boolean isYearHigh;
-    
+
     @Column
     private boolean isYearLow;
 
@@ -90,7 +90,7 @@ public class StockPriceEagerLazyQueryCacheImpl implements Serializable, StockPri
 
     public StockPriceEagerLazyQueryCacheImpl() {
     }
-    
+
     StockPriceEagerLazyQueryCacheImpl(StockPricePK pk) {
         id = pk;
     }

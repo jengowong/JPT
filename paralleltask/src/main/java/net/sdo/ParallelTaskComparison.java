@@ -52,7 +52,7 @@ public class ParallelTaskComparison {
                 }
             } else {
                 int mid = (first + last) >>> 1;
-                ForkJoinTask left = 
+                ForkJoinTask left =
                     new ForkJoinTask(d, first, mid, nLeaves);
                 left.fork();
                 ForkJoinTask right =

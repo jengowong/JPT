@@ -11,5 +11,5 @@ import net.sdo.stock.StockPriceHistory;
 @Remote
 public interface StockSessionBeanRemote {
     StockPriceHistory getHistory(String symbol, Date startDate,
-                                 Date endDate, boolean doMock, int impl); 
+                                 Date endDate, boolean doMock, int impl);
 }

@@ -8,20 +8,20 @@ import java.util.*;
 import java.io.*;
 
 /**
- * 
+ *
  * Parse output from jstack to provide a snapshot of where threads
  * are running or blocked.
  *
  * usage: java ParseJStack [ -name threadname ] file1 [file2 ...]
- * 
- * The list of files should be from one or more JDK 6 jstack commands. 
- * 
+ *
+ * The list of files should be from one or more JDK 6 jstack commands.
+ *
  * The threadname can be used to restrict output to threads that match a
  * particular pattern. For example, for glassfish you can say
  * -name thread-pool-1 to get all threads in the default ORB threadpool.
  * TODO: this should use regular expression pattern matching; right
  * now it simply uses substring matching (indexOf).
- * 
+ *
  */
 
 public class ParseJStack {

@@ -44,7 +44,7 @@ public class RandomTestJava {
         if (report) {
             System.out.println("Error: " + error + " calcuated in C random only in " + (now - then));
         }
-        
+
         // Java C C
         error = 0;
         then = System.currentTimeMillis();

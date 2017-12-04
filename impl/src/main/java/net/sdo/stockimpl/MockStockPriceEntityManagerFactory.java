@@ -69,7 +69,7 @@ public class MockStockPriceEntityManagerFactory implements EntityManagerFactory 
         public BigDecimal lastClose;
         public Calendar calendar = Calendar.getInstance();
     }
-    
+
     private static ThreadLocal<DataHolder> tlDataHolder =
            new ThreadLocal<DataHolder>() {
         @Override
@@ -77,7 +77,7 @@ public class MockStockPriceEntityManagerFactory implements EntityManagerFactory 
             return new DataHolder();
         }
     };
-    
+
     class MockEntityManager implements EntityManager {
         @Override
         public void persist(Object o) {
@@ -107,7 +107,7 @@ public class MockStockPriceEntityManagerFactory implements EntityManagerFactory 
                 dh.calendar.get(Calendar.DAY_OF_WEEK) == Calendar.SATURDAY) {
                 return null;
             }
-    
+
             if (dh.symbol == null || !dh.symbol.equals(pk.getSymbol())) {
                 dh.symbol = pk.getSymbol();
                 sp.setOpeningPrice(
@@ -128,7 +128,7 @@ public class MockStockPriceEntityManagerFactory implements EntityManagerFactory 
             if (sp.getClosingPrice().compareTo(BigDecimal.ZERO) < 0) {
                 sp.setClosingPrice(BigDecimal.ZERO);
             }
-            
+
             pctChange = dh.random.nextDouble() * dh.random.nextDouble() * 0.1;
             sp.setHigh(sp.getOpeningPrice().
                 multiply(new BigDecimal(pctChange * dh.random.nextDouble())).
@@ -139,7 +139,7 @@ public class MockStockPriceEntityManagerFactory implements EntityManagerFactory 
             if (sp.getHigh().compareTo(sp.getOpeningPrice()) < 0) {
                 sp.setHigh(sp.getOpeningPrice());
             }
-            
+
             pctChange = dh.random.nextDouble() * dh.random.nextDouble() * 0.1;
             BigDecimal dailyLoss = sp.getClosingPrice().
                 multiply(new BigDecimal(pctChange).
@@ -150,7 +150,7 @@ public class MockStockPriceEntityManagerFactory implements EntityManagerFactory 
                 sp.setLow(sp.getClosingPrice());
             }
             dh.lastClose = sp.getClosingPrice();
-        
+
             return (T) sp;
         }
 
@@ -400,7 +400,7 @@ public class MockStockPriceEntityManagerFactory implements EntityManagerFactory 
             return findWithHistory(dh, o);
         }
     }
-    
+
     private String className;
     public MockStockPriceEntityManagerFactory(String s) {
         className = s;

@@ -37,6 +37,6 @@ public class ClassLoadingDelegate {
 	    long now = System.nanoTime();
             long time = (now - then) / 1000;
             System.out.println("Average time " + j + ":  " + ((double) (time) / N));
-        }            
+        }
     }
 }

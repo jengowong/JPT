@@ -48,7 +48,7 @@ public class StockPriceResource {
         @DefaultValue("0") @QueryParam("mode") int mode,
         @DefaultValue("false") @QueryParam("cache") boolean doCache
     ) {
-        
+
         if (symbol == null || symbol.length() == 0) {
             symbol = StockPriceUtils.getRandomSymbol();
         }

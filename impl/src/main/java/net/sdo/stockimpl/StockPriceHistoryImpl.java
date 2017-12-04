@@ -22,7 +22,7 @@ import net.sdo.stock.StockPriceHistory;
 public class StockPriceHistoryImpl implements StockPriceHistory, Serializable {
     private final static long msPerDay =
         TimeUnit.MILLISECONDS.convert(1, TimeUnit.DAYS);
-    
+
     protected String symbol;
     protected SortedMap<Date, StockPrice> prices = new TreeMap<>();
     protected Date firstDate;

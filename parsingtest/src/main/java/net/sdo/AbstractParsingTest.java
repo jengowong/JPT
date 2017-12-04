@@ -26,9 +26,9 @@ public abstract class  AbstractParsingTest {
         }
         return false;
     }
-    
+
     public void init(RunParams rp) throws IOException {
-        targetItemCount = rp.getTargetItemCount();    
+        targetItemCount = rp.getTargetItemCount();
         data = rp.getInput();
         engineInit(rp);
     }

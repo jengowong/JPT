@@ -13,9 +13,9 @@
       <property name="eclipselink.connection-pool.max" value="4"/>
       <property name="javax.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver"/>
       <property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@localhost:1521:XE"/>
-      <property name="eclipselink.jdbc.batch-writing" value="JDBC" />  
-      <property name="eclipselink.jdbc.batch-writing.size" value="10000" />  
-      <property name="eclipselink.jdbc.cache-statements" value="true" />  
+      <property name="eclipselink.jdbc.batch-writing" value="JDBC" />
+      <property name="eclipselink.jdbc.batch-writing.size" value="10000" />
+      <property name="eclipselink.jdbc.cache-statements" value="true" />
       </properties>
   </persistence-unit>
 </persistence>

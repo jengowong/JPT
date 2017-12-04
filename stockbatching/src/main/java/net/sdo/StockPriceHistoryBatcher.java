@@ -56,7 +56,7 @@ public class StockPriceHistoryBatcher {
         }
         if (args.length < 3) {
             mode = 0;
-        } 
+        }
         else {
             mode = Integer.parseInt(args[3]);
         }

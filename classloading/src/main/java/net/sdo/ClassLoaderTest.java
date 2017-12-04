@@ -124,7 +124,7 @@ public class ClassLoaderTest implements Runnable {
             ucl = new URLClassLoader(urls);
             loadClasses(classNames, classNames.length, ucl);
         }
-        LinkedBlockingQueue<Runnable> queue = new LinkedBlockingQueue<Runnable>();    
+        LinkedBlockingQueue<Runnable> queue = new LinkedBlockingQueue<Runnable>();
         PausingThreadPoolExecutor tpe = new PausingThreadPoolExecutor(nThreads, queue);
         tpe.prestartAllCoreThreads();
         for (int j = 0; j < 100; j++) {

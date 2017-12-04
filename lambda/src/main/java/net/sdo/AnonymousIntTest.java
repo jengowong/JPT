@@ -5127,7 +5127,7 @@ public class AnonymousIntTest implements CalcInterface {
                 return 1;
             }
         };
-        return 
+        return
             a1024.getInt() +
             a1023.getInt() +
             a1022.getInt() +

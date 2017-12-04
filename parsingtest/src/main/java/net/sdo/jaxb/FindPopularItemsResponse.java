@@ -22,9 +22,9 @@ import javax.xml.datatype.XMLGregorianCalendar;
 
 /**
  * <p>Java class for anonymous complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType>
  *   &lt;complexContent>
@@ -109,8 +109,8 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
+ *
+ *
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
@@ -137,11 +137,11 @@ public class FindPopularItemsResponse {
 
     /**
      * Gets the value of the timestamp property.
-     * 
+     *
      * @return
      *     possible object is
      *     {@link XMLGregorianCalendar }
-     *     
+     *
      */
     public XMLGregorianCalendar getTimestamp() {
         return timestamp;
@@ -149,11 +149,11 @@ public class FindPopularItemsResponse {
 
     /**
      * Sets the value of the timestamp property.
-     * 
+     *
      * @param value
      *     allowed object is
      *     {@link XMLGregorianCalendar }
-     *     
+     *
      */
     public void setTimestamp(XMLGregorianCalendar value) {
         this.timestamp = value;
@@ -161,11 +161,11 @@ public class FindPopularItemsResponse {
 
     /**
      * Gets the value of the ack property.
-     * 
+     *
      * @return
      *     possible object is
      *     {@link String }
-     *     
+     *
      */
     public String getAck() {
         return ack;
@@ -173,11 +173,11 @@ public class FindPopularItemsResponse {
 
     /**
      * Sets the value of the ack property.
-     * 
+     *
      * @param value
      *     allowed object is
      *     {@link String }
-     *     
+     *
      */
     public void setAck(String value) {
         this.ack = value;
@@ -185,11 +185,11 @@ public class FindPopularItemsResponse {
 
     /**
      * Gets the value of the build property.
-     * 
+     *
      * @return
      *     possible object is
      *     {@link String }
-     *     
+     *
      */
     public String getBuild() {
         return build;
@@ -197,11 +197,11 @@ public class FindPopularItemsResponse {
 
     /**
      * Sets the value of the build property.
-     * 
+     *
      * @param value
      *     allowed object is
      *     {@link String }
-     *     
+     *
      */
     public void setBuild(String value) {
         this.build = value;
@@ -209,7 +209,7 @@ public class FindPopularItemsResponse {
 
     /**
      * Gets the value of the version property.
-     * 
+     *
      */
     public short getVersion() {
         return version;
@@ -217,7 +217,7 @@ public class FindPopularItemsResponse {
 
     /**
      * Sets the value of the version property.
-     * 
+     *
      */
     public void setVersion(short value) {
         this.version = value;
@@ -225,11 +225,11 @@ public class FindPopularItemsResponse {
 
     /**
      * Gets the value of the itemArray property.
-     * 
+     *
      * @return
      *     possible object is
      *     {@link ItemArray }
-     *     
+     *
      */
     public ItemArray getItemArray() {
         return itemArray;
@@ -237,11 +237,11 @@ public class FindPopularItemsResponse {
 
     /**
      * Sets the value of the itemArray property.
-     * 
+     *
      * @param value
      *     allowed object is
      *     {@link ItemArray }
-     *     
+     *
      */
     public void setItemArray(ItemArray value) {
         this.itemArray = value;
@@ -250,9 +250,9 @@ public class FindPopularItemsResponse {
 
     /**
      * <p>Java class for anonymous complex type.
-     * 
+     *
      * <p>The following schema fragment specifies the expected content contained within this class.
-     * 
+     *
      * <pre>
      * &lt;complexType>
      *   &lt;complexContent>
@@ -323,8 +323,8 @@ public class FindPopularItemsResponse {
      *   &lt;/complexContent>
      * &lt;/complexType>
      * </pre>
-     * 
-     * 
+     *
+     *
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
@@ -337,25 +337,25 @@ public class FindPopularItemsResponse {
 
         /**
          * Gets the value of the item property.
-         * 
+         *
          * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
          * This is why there is not a <CODE>set</CODE> method for the item property.
-         * 
+         *
          * <p>
          * For example, to add a new item, do as follows:
          * <pre>
          *    getItem().add(newItem);
          * </pre>
-         * 
-         * 
+         *
+         *
          * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link Item }
-         * 
-         * 
+         *
+         *
          */
         public List<Item> getItem() {
             if (item == null) {
@@ -367,9 +367,9 @@ public class FindPopularItemsResponse {
 
         /**
          * <p>Java class for anonymous complex type.
-         * 
+         *
          * <p>The following schema fragment specifies the expected content contained within this class.
-         * 
+         *
          * <pre>
          * &lt;complexType>
          *   &lt;complexContent>
@@ -430,8 +430,8 @@ public class FindPopularItemsResponse {
          *   &lt;/complexContent>
          * &lt;/complexType>
          * </pre>
-         * 
-         * 
+         *
+         *
          */
         @XmlAccessorType(XmlAccessType.FIELD)
         @XmlType(name = "", propOrder = {
@@ -486,7 +486,7 @@ public class FindPopularItemsResponse {
 
             /**
              * Gets the value of the itemID property.
-             * 
+             *
              */
             public long getItemID() {
                 return itemID;
@@ -494,7 +494,7 @@ public class FindPopularItemsResponse {
 
             /**
              * Sets the value of the itemID property.
-             * 
+             *
              */
             public void setItemID(long value) {
                 this.itemID = value;
@@ -502,11 +502,11 @@ public class FindPopularItemsResponse {
 
             /**
              * Gets the value of the endTime property.
-             * 
+             *
              * @return
              *     possible object is
              *     {@link XMLGregorianCalendar }
-             *     
+             *
              */
             public XMLGregorianCalendar getEndTime() {
                 return endTime;
@@ -514,11 +514,11 @@ public class FindPopularItemsResponse {
 
             /**
              * Sets the value of the endTime property.
-             * 
+             *
              * @param value
              *     allowed object is
              *     {@link XMLGregorianCalendar }
-             *     
+             *
              */
             public void setEndTime(XMLGregorianCalendar value) {
                 this.endTime = value;
@@ -526,11 +526,11 @@ public class FindPopularItemsResponse {
 
             /**
              * Gets the value of the viewItemURLForNaturalSearch property.
-             * 
+             *
              * @return
              *     possible object is
              *     {@link String }
-             *     
+             *
              */
             public String getViewItemURLForNaturalSearch() {
                 return viewItemURLForNaturalSearch;
@@ -538,11 +538,11 @@ public class FindPopularItemsResponse {
 
             /**
              * Sets the value of the viewItemURLForNaturalSearch property.
-             * 
+             *
              * @param value
              *     allowed object is
              *     {@link String }
-             *     
+             *
              */
             public void setViewItemURLForNaturalSearch(String value) {
                 this.viewItemURLForNaturalSearch = value;
@@ -550,11 +550,11 @@ public class FindPopularItemsResponse {
 
             /**
              * Gets the value of the listingType property.
-             * 
+             *
              * @return
              *     possible object is
              *     {@link String }
-             *     
+             *
              */
             public String getListingType() {
                 return listingType;
@@ -562,11 +562,11 @@ public class FindPopularItemsResponse {
 
             /**
              * Sets the value of the listingType property.
-             * 
+             *
              * @param value
              *     allowed object is
              *     {@link String }
-             *     
+             *
              */
             public void setListingType(String value) {
                 this.listingType = value;
@@ -574,11 +574,11 @@ public class FindPopularItemsResponse {
 
             /**
              * Gets the value of the galleryURL property.
-             * 
+             *
              * @return
              *     possible object is
              *     {@link String }
-             *     
+             *
              */
             public String getGalleryURL() {
                 return galleryURL;
@@ -586,11 +586,11 @@ public class FindPopularItemsResponse {
 
             /**
              * Sets the value of the galleryURL property.
-             * 
+             *
              * @param value
              *     allowed object is
              *     {@link String }
-             *     
+             *
              */
             public void setGalleryURL(String value) {
                 this.galleryURL = value;
@@ -598,7 +598,7 @@ public class FindPopularItemsResponse {
 
             /**
              * Gets the value of the primaryCategoryID property.
-             * 
+             *
              */
             public int getPrimaryCategoryID() {
                 return primaryCategoryID;
@@ -606,7 +606,7 @@ public class FindPopularItemsResponse {
 
             /**
              * Sets the value of the primaryCategoryID property.
-             * 
+             *
              */
             public void setPrimaryCategoryID(int value) {
                 this.primaryCategoryID = value;
@@ -614,11 +614,11 @@ public class FindPopularItemsResponse {
 
             /**
              * Gets the value of the primaryCategoryName property.
-             * 
+             *
              * @return
              *     possible object is
              *     {@link String }
-             *     
+             *
              */
             public String getPrimaryCategoryName() {
                 return primaryCategoryName;
@@ -626,11 +626,11 @@ public class FindPopularItemsResponse {
 
             /**
              * Sets the value of the primaryCategoryName property.
-             * 
+             *
              * @param value
              *     allowed object is
              *     {@link String }
-             *     
+             *
              */
             public void setPrimaryCategoryName(String value) {
                 this.primaryCategoryName = value;
@@ -638,7 +638,7 @@ public class FindPopularItemsResponse {
 
             /**
              * Gets the value of the bidCount property.
-             * 
+             *
              */
             public short getBidCount() {
                 return bidCount;
@@ -646,7 +646,7 @@ public class FindPopularItemsResponse {
 
             /**
              * Sets the value of the bidCount property.
-             * 
+             *
              */
             public void setBidCount(short value) {
                 this.bidCount = value;
@@ -654,11 +654,11 @@ public class FindPopularItemsResponse {
 
             /**
              * Gets the value of the convertedCurrentPrice property.
-             * 
+             *
              * @return
              *     possible object is
              *     {@link ConvertedCurrentPrice }
-             *     
+             *
              */
             public ConvertedCurrentPrice getConvertedCurrentPrice() {
                 return convertedCurrentPrice;
@@ -666,11 +666,11 @@ public class FindPopularItemsResponse {
 
             /**
              * Sets the value of the convertedCurrentPrice property.
-             * 
+             *
              * @param value
              *     allowed object is
              *     {@link ConvertedCurrentPrice }
-             *     
+             *
              */
             public void setConvertedCurrentPrice(ConvertedCurrentPrice value) {
                 this.convertedCurrentPrice = value;
@@ -678,11 +678,11 @@ public class FindPopularItemsResponse {
 
             /**
              * Gets the value of the listingStatus property.
-             * 
+             *
              * @return
              *     possible object is
              *     {@link String }
-             *     
+             *
              */
             public String getListingStatus() {
                 return listingStatus;
@@ -690,11 +690,11 @@ public class FindPopularItemsResponse {
 
             /**
              * Sets the value of the listingStatus property.
-             * 
+             *
              * @param value
              *     allowed object is
              *     {@link String }
-             *     
+             *
              */
             public void setListingStatus(String value) {
                 this.listingStatus = value;
@@ -702,11 +702,11 @@ public class FindPopularItemsResponse {
 
             /**
              * Gets the value of the timeLeft property.
-             * 
+             *
              * @return
              *     possible object is
              *     {@link Duration }
-             *     
+             *
              */
             public Duration getTimeLeft() {
                 return timeLeft;
@@ -714,11 +714,11 @@ public class FindPopularItemsResponse {
 
             /**
              * Sets the value of the timeLeft property.
-             * 
+             *
              * @param value
              *     allowed object is
              *     {@link Duration }
-             *     
+             *
              */
             public void setTimeLeft(Duration value) {
                 this.timeLeft = value;
@@ -726,11 +726,11 @@ public class FindPopularItemsResponse {
 
             /**
              * Gets the value of the title property.
-             * 
+             *
              * @return
              *     possible object is
              *     {@link String }
-             *     
+             *
              */
             public String getTitle() {
                 return title;
@@ -738,11 +738,11 @@ public class FindPopularItemsResponse {
 
             /**
              * Sets the value of the title property.
-             * 
+             *
              * @param value
              *     allowed object is
              *     {@link String }
-             *     
+             *
              */
             public void setTitle(String value) {
                 this.title = value;
@@ -750,11 +750,11 @@ public class FindPopularItemsResponse {
 
             /**
              * Gets the value of the shippingCostSummary property.
-             * 
+             *
              * @return
              *     possible object is
              *     {@link ShippingCostSummary }
-             *     
+             *
              */
             public ShippingCostSummary getShippingCostSummary() {
                 return shippingCostSummary;
@@ -762,11 +762,11 @@ public class FindPopularItemsResponse {
 
             /**
              * Sets the value of the shippingCostSummary property.
-             * 
+             *
              * @param value
              *     allowed object is
              *     {@link ShippingCostSummary }
-             *     
+             *
              */
             public void setShippingCostSummary(ShippingCostSummary value) {
                 this.shippingCostSummary = value;
@@ -774,7 +774,7 @@ public class FindPopularItemsResponse {
 
             /**
              * Gets the value of the watchCount property.
-             * 
+             *
              */
             public short getWatchCount() {
                 return watchCount;
@@ -782,7 +782,7 @@ public class FindPopularItemsResponse {
 
             /**
              * Sets the value of the watchCount property.
-             * 
+             *
              */
             public void setWatchCount(short value) {
                 this.watchCount = value;
@@ -791,9 +791,9 @@ public class FindPopularItemsResponse {
 
             /**
              * <p>Java class for anonymous complex type.
-             * 
+             *
              * <p>The following schema fragment specifies the expected content contained within this class.
-             * 
+             *
              * <pre>
              * &lt;complexType>
              *   &lt;simpleContent>
@@ -803,8 +803,8 @@ public class FindPopularItemsResponse {
              *   &lt;/simpleContent>
              * &lt;/complexType>
              * </pre>
-             * 
-             * 
+             *
+             *
              */
             @XmlAccessorType(XmlAccessType.FIELD)
             @XmlType(name = "", propOrder = {
@@ -819,7 +819,7 @@ public class FindPopularItemsResponse {
 
                 /**
                  * Gets the value of the value property.
-                 * 
+                 *
                  */
                 public float getValue() {
                     return value;
@@ -827,7 +827,7 @@ public class FindPopularItemsResponse {
 
                 /**
                  * Sets the value of the value property.
-                 * 
+                 *
                  */
                 public void setValue(float value) {
                     this.value = value;
@@ -835,11 +835,11 @@ public class FindPopularItemsResponse {
 
                 /**
                  * Gets the value of the currencyID property.
-                 * 
+                 *
                  * @return
                  *     possible object is
                  *     {@link String }
-                 *     
+                 *
                  */
                 public String getCurrencyID() {
                     return currencyID;
@@ -847,11 +847,11 @@ public class FindPopularItemsResponse {
 
                 /**
                  * Sets the value of the currencyID property.
-                 * 
+                 *
                  * @param value
                  *     allowed object is
                  *     {@link String }
-                 *     
+                 *
                  */
                 public void setCurrencyID(String value) {
                     this.currencyID = value;
@@ -862,9 +862,9 @@ public class FindPopularItemsResponse {
 
             /**
              * <p>Java class for anonymous complex type.
-             * 
+             *
              * <p>The following schema fragment specifies the expected content contained within this class.
-             * 
+             *
              * <pre>
              * &lt;complexType>
              *   &lt;complexContent>
@@ -894,8 +894,8 @@ public class FindPopularItemsResponse {
              *   &lt;/complexContent>
              * &lt;/complexType>
              * </pre>
-             * 
-             * 
+             *
+             *
              */
             @XmlAccessorType(XmlAccessType.FIELD)
             @XmlType(name = "", propOrder = {
@@ -914,11 +914,11 @@ public class FindPopularItemsResponse {
 
                 /**
                  * Gets the value of the shippingServiceCost property.
-                 * 
+                 *
                  * @return
                  *     possible object is
                  *     {@link ShippingServiceCost }
-                 *     
+                 *
                  */
                 public ShippingServiceCost getShippingServiceCost() {
                     return shippingServiceCost;
@@ -926,11 +926,11 @@ public class FindPopularItemsResponse {
 
                 /**
                  * Sets the value of the shippingServiceCost property.
-                 * 
+                 *
                  * @param value
                  *     allowed object is
                  *     {@link ShippingServiceCost }
-                 *     
+                 *
                  */
                 public void setShippingServiceCost(ShippingServiceCost value) {
                     this.shippingServiceCost = value;
@@ -938,11 +938,11 @@ public class FindPopularItemsResponse {
 
                 /**
                  * Gets the value of the shippingType property.
-                 * 
+                 *
                  * @return
                  *     possible object is
                  *     {@link String }
-                 *     
+                 *
                  */
                 public String getShippingType() {
                     return shippingType;
@@ -950,11 +950,11 @@ public class FindPopularItemsResponse {
 
                 /**
                  * Sets the value of the shippingType property.
-                 * 
+                 *
                  * @param value
                  *     allowed object is
                  *     {@link String }
-                 *     
+                 *
                  */
                 public void setShippingType(String value) {
                     this.shippingType = value;
@@ -962,11 +962,11 @@ public class FindPopularItemsResponse {
 
                 /**
                  * Gets the value of the listedShippingServiceCost property.
-                 * 
+                 *
                  * @return
                  *     possible object is
                  *     {@link ListedShippingServiceCost }
-                 *     
+                 *
                  */
                 public ListedShippingServiceCost getListedShippingServiceCost() {
                     return listedShippingServiceCost;
@@ -974,11 +974,11 @@ public class FindPopularItemsResponse {
 
                 /**
                  * Sets the value of the listedShippingServiceCost property.
-                 * 
+                 *
                  * @param value
                  *     allowed object is
                  *     {@link ListedShippingServiceCost }
-                 *     
+                 *
                  */
                 public void setListedShippingServiceCost(ListedShippingServiceCost value) {
                     this.listedShippingServiceCost = value;
@@ -987,9 +987,9 @@ public class FindPopularItemsResponse {
 
                 /**
                  * <p>Java class for anonymous complex type.
-                 * 
+                 *
                  * <p>The following schema fragment specifies the expected content contained within this class.
-                 * 
+                 *
                  * <pre>
                  * &lt;complexType>
                  *   &lt;simpleContent>
@@ -999,8 +999,8 @@ public class FindPopularItemsResponse {
                  *   &lt;/simpleContent>
                  * &lt;/complexType>
                  * </pre>
-                 * 
-                 * 
+                 *
+                 *
                  */
                 @XmlAccessorType(XmlAccessType.FIELD)
                 @XmlType(name = "", propOrder = {
@@ -1015,7 +1015,7 @@ public class FindPopularItemsResponse {
 
                     /**
                      * Gets the value of the value property.
-                     * 
+                     *
                      */
                     public float getValue() {
                         return value;
@@ -1023,7 +1023,7 @@ public class FindPopularItemsResponse {
 
                     /**
                      * Sets the value of the value property.
-                     * 
+                     *
                      */
                     public void setValue(float value) {
                         this.value = value;
@@ -1031,11 +1031,11 @@ public class FindPopularItemsResponse {
 
                     /**
                      * Gets the value of the currencyID property.
-                     * 
+                     *
                      * @return
                      *     possible object is
                      *     {@link String }
-                     *     
+                     *
                      */
                     public String getCurrencyID() {
                         return currencyID;
@@ -1043,11 +1043,11 @@ public class FindPopularItemsResponse {
 
                     /**
                      * Sets the value of the currencyID property.
-                     * 
+                     *
                      * @param value
                      *     allowed object is
                      *     {@link String }
-                     *     
+                     *
                      */
                     public void setCurrencyID(String value) {
                         this.currencyID = value;
@@ -1058,9 +1058,9 @@ public class FindPopularItemsResponse {
 
                 /**
                  * <p>Java class for anonymous complex type.
-                 * 
+                 *
                  * <p>The following schema fragment specifies the expected content contained within this class.
-                 * 
+                 *
                  * <pre>
                  * &lt;complexType>
                  *   &lt;simpleContent>
@@ -1070,8 +1070,8 @@ public class FindPopularItemsResponse {
                  *   &lt;/simpleContent>
                  * &lt;/complexType>
                  * </pre>
-                 * 
-                 * 
+                 *
+                 *
                  */
                 @XmlAccessorType(XmlAccessType.FIELD)
                 @XmlType(name = "", propOrder = {
@@ -1086,7 +1086,7 @@ public class FindPopularItemsResponse {
 
                     /**
                      * Gets the value of the value property.
-                     * 
+                     *
                      */
                     public float getValue() {
                         return value;
@@ -1094,7 +1094,7 @@ public class FindPopularItemsResponse {
 
                     /**
                      * Sets the value of the value property.
-                     * 
+                     *
                      */
                     public void setValue(float value) {
                         this.value = value;
@@ -1102,11 +1102,11 @@ public class FindPopularItemsResponse {
 
                     /**
                      * Gets the value of the currencyID property.
-                     * 
+                     *
                      * @return
                      *     possible object is
                      *     {@link String }
-                     *     
+                     *
                      */
                     public String getCurrencyID() {
                         return currencyID;
@@ -1114,11 +1114,11 @@ public class FindPopularItemsResponse {
 
                     /**
                      * Sets the value of the currencyID property.
-                     * 
+                     *
                      * @param value
                      *     allowed object is
                      *     {@link String }
-                     *     
+                     *
                      */
                     public void setCurrencyID(String value) {
                         this.currencyID = value;

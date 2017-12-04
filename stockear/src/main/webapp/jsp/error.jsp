@@ -15,7 +15,7 @@
         <h1>Error from StockPrice Servlet!</h1>
         The following error was returned from the StockPrice servlet
         <pre>
-            <% 
+            <%
                 PrintWriter pw = new PrintWriter(out);
                 exception.printStackTrace(pw);
             %>
