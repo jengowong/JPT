@@ -4,6 +4,10 @@
 
 package net.sdo.stockimpl;
 
+import net.sdo.stock.StockPrice;
+import net.sdo.stock.StockPriceHistory;
+
+import javax.persistence.EntityManager;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.math.BigInteger;
@@ -15,13 +19,9 @@ import java.util.Map;
 import java.util.SortedMap;
 import java.util.TreeMap;
 import java.util.concurrent.TimeUnit;
-import javax.persistence.EntityManager;
-import net.sdo.stock.StockPrice;
-import net.sdo.stock.StockPriceHistory;
 
 public class StockPriceHistoryImpl implements StockPriceHistory, Serializable {
-    private final static long msPerDay =
-        TimeUnit.MILLISECONDS.convert(1, TimeUnit.DAYS);
+    private final static long msPerDay = TimeUnit.MILLISECONDS.convert(1, TimeUnit.DAYS);
 
     protected String symbol;
     protected SortedMap<Date, StockPrice> prices = new TreeMap<>();
@@ -33,21 +33,23 @@ public class StockPriceHistoryImpl implements StockPriceHistory, Serializable {
     protected BigDecimal averagePrice;
     protected BigDecimal stdDev;
 
-    public StockPriceHistoryImpl(String s, Date startDate,
-                                 Date endDate, EntityManager em) {
+    public StockPriceHistoryImpl(String s,
+                                 Date startDate,
+                                 Date endDate,
+                                 EntityManager em) {
         Date curDate = new Date(startDate.getTime());
-        symbol = s;
+        this.symbol = s;
         while (!curDate.after(endDate)) {
-            StockPriceEagerLazyImpl sp =
-                em.find(StockPriceEagerLazyImpl.class,
-                        new StockPricePK(s, (Date) curDate.clone()));
+            StockPriceEagerLazyImpl sp = em.find(
+                    StockPriceEagerLazyImpl.class,
+                    new StockPricePK(s, (Date) curDate.clone()));
             if (sp != null) {
                 Date d = (Date) curDate.clone();
-                if (firstDate == null) {
-                    firstDate = d;
+                if (this.firstDate == null) {
+                    this.firstDate = d;
                 }
-                prices.put(d, sp);
-                lastDate = d;
+                this.prices.put(d, sp);
+                this.lastDate = d;
             }
             curDate.setTime(curDate.getTime() + msPerDay);
         }
@@ -126,7 +128,7 @@ public class StockPriceHistoryImpl implements StockPriceHistory, Serializable {
         for (StockPrice sp : prices.values()) {
             BigDecimal closingPrice = sp.getClosingPrice();
             if (closingPrice.compareTo(lowPrice) < 0 ||
-                lowPrice == BigDecimal.ZERO) {
+                    lowPrice == BigDecimal.ZERO) {
                 lowPrice = closingPrice;
             }
             if (closingPrice.compareTo(highPrice) > 0) {
@@ -136,7 +138,7 @@ public class StockPriceHistoryImpl implements StockPriceHistory, Serializable {
             nPrices++;
         }
         averagePrice = sum.divide(new BigDecimal(nPrices),
-                                  BigDecimal.ROUND_HALF_UP);
+                BigDecimal.ROUND_HALF_UP);
         sum = new BigDecimal(0);
         for (StockPrice sp : prices.values()) {
             BigDecimal diff = sp.getClosingPrice().subtract(averagePrice);
@@ -144,9 +146,10 @@ public class StockPriceHistoryImpl implements StockPriceHistory, Serializable {
             sum = sum.add(diff);
         }
         stdDev = sqrt(sum.divide(new BigDecimal(nPrices),
-                                 BigDecimal.ROUND_HALF_UP));
+                BigDecimal.ROUND_HALF_UP));
         needsCalc = false;
     }
+
     private static final BigDecimal TWO = new BigDecimal("2");
 
     private BigDecimal sqrt(BigDecimal bd) {
@@ -164,7 +167,7 @@ public class StockPriceHistoryImpl implements StockPriceHistory, Serializable {
             initial = initial.add(last);
             initial = initial.divide(TWO);
         } while (bd.subtract(initial.multiply(initial)).
-                    abs().compareTo(BigDecimal.ONE) == 0);
+                abs().compareTo(BigDecimal.ONE) == 0);
         return initial;
     }
 
@@ -182,4 +185,5 @@ public class StockPriceHistoryImpl implements StockPriceHistory, Serializable {
         }
         return sm;
     }
+
 }
